@@ -1,0 +1,218 @@
+body {
+  font: arial, Helvetica, Sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  /* background-color: aqua; */
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+.buttonset {
+  width: 80%;
+  margin: 10;
+  padding: 0 10px;
+  overflow: hidden;
+  color: #000;
+}
+.dark {
+  padding: 15px;
+  background-color: #a2c3eb;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.imgcon {
+  margin: 20px;
+  width: auto;
+  height: auto;
+}
+header {
+  background-color: #95a6ec;
+  color: black;
+  padding-top: 20px;
+  min-height: 110px;
+  border-bottom: #000000 3px solid;
+}
+/*빈공간이면 자식태그 (header a)<- 헤더 안에있는 a태그를 선택지정*/
+header a {
+  color: black;
+  text-decoration: none;
+  font-size: 22px;
+}
+/* 다음칸 넘어갔던거 일자로 쭉 펴주는 태그(중요)*/
+header li {
+  display: inline;
+  padding: 0 10px; /*위아래로는 0픽셀 좌우로는 10픽셀 한번에 정렬*/
+  float: left;
+}
+
+header #branding {
+  float: left;
+}
+
+header #branding h1 {
+  margin: 0;
+}
+
+header nav {
+  float: right;
+  margin-top: 10px;
+}
+
+header .highlight,
+header .current a {
+  font-weight: bold;
+}
+/*마우스 올라갈때 바뀌는 명령어*/
+header a:hover {
+  color: #aaaaaa;
+  font-weight: bold;
+}
+#clsdata1 {
+  background-color: #e1c7fd;
+  font-size: 13px;
+}
+/* Showcase */
+#showcase {
+  min-height: 400px; /*쇼케이스 프레임이랑 위랑 400픽셀 띄기*/
+  background: url(./img/Security.jpg) no-repeat 0 -20px;
+}
+
+#showcase h1 {
+  margin-top: 100px;
+  font-size: 50px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+#showcase h2 {
+  font-size: 25px;
+  margin-top: 200px;
+  color: white;
+}
+
+/* Newsletter */
+/*왜 여기부터 # 안되고 .으로 해야 되는거지?*/
+.newsletter {
+  background-color: #95a6ec;
+  padding: 15px;
+  color: white;
+}
+
+.newsletter h1 {
+  float: left;
+}
+
+.newsletter form {
+  float: right;
+  margin-top: 15px;
+}
+
+.newsletter input[type='email'] {
+  padding: 4px;
+  height: 25px;
+  width: 250px;
+  border-radius: 5px;
+}
+
+.button_1 {
+  height: 36px;
+  background-color: #dabff3;
+  border-radius: 5px;
+  border: 0;
+  padding: 0 10px;
+  color: white;
+}
+.button2 {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.boxes {
+  margin-top: 20px;
+}
+
+.boxes .box {
+  float: left;
+  text-align: center;
+  width: 30%;
+  padding: 10px;
+}
+
+.boxes .box img {
+  width: 200px;
+  height: 150px;
+}
+
+/* Sidebar */
+aside#sidebar {
+  float: right;
+  width: 30%;
+  margin-top: 10px;
+}
+/* Footer */
+footer {
+  padding: 20px;
+  margin-top: 20px;
+  color: white;
+  background-color: #e8491d;
+  text-align: center;
+}
+
+/* Main-col */
+article#main-col {
+  float: left;
+  width: 65%;
+}
+
+/* Service */
+ul#service li {
+  list-style: none;
+  padding: 20px;
+  border: #cccccc solid 1px;
+  background-color: #e6e6e6;
+  margin-bottom: 5px;
+}
+
+/* Media Quaries  */
+@media (max-width: 768px) {
+  header #branding,
+  header nav,
+  header nav li,
+  #newsletter h1,
+  #newsletter form,
+  #boxes .box,
+  article#main-col,
+  aside#sidebar {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  #showcase h1 {
+    margin-top: 30px;
+    font-size: 35px;
+    margin-bottom: 10px;
+  }
+
+  header {
+    padding-bottom: 20px;
+  }
+}
